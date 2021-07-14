@@ -253,7 +253,7 @@ body{
          width: auto;
          height: 700px;
          flex-direction: column;
-         margin: 0;
+         display: inline-block;
         
     }
     .text-side{
@@ -262,7 +262,7 @@ body{
     }
 
     .header{
-        display: grid;
+        display: block;
         grid-template-columns: repeat(1,1fr);
       
     }
