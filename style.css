@@ -13,12 +13,17 @@ body{
 /* header section */
 .header-section{
     background-color: #2D25A0;
-    width: 100%;
     height: 600px;
     
+    
+}
+.hero{
+    display: flex;
 }
 .header{
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   
 }
 .text-side{
@@ -245,27 +250,27 @@ body{
 @media only screen and (max-width: 688px){
 
     .header-section{
-       width: auto;
-        height: 700px;
+         width: auto;
+         height: 700px;
+         flex-direction: column;
+         margin: 0;
         
     }
     .text-side{
-        margin: 20px 20px 20px 86px;
+        margin: 20px 0px 20px 86px;
         
     }
 
     .header{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
       
     }
     .head-text{
         color: white;
-        font-size: 36px;
+        font-size: 25px;
         margin-bottom: 27px;
-        margin-right: 40px;
-        padding-right: 162px;
+        padding-right: 148px;
     }
     .head-img{
         width: 300px;
@@ -279,10 +284,8 @@ body{
         display: flex;
         margin-top: 30px;
         margin-left: 10px;
-        margin-right: 10px;
         margin-bottom: 50px;
         padding: 15px;
-        flex-direction: column;
         align-items: center;
     }
 
